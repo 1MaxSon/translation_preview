@@ -8,9 +8,9 @@ A plugin for Godot to preview translations directly inside the editor.
 	<img alt="Static Badge" src="https://img.shields.io/badge/Godot-4.2%2B-blue">
 </a>
 <a href="LICENSE">
-<img alt="GitHub License" src="https://img.shields.io/github/license/1MaxSon/">
+<img alt="GitHub License" src="https://img.shields.io/github/license/1MaxSon/translation_preview">
 </a>
-<img alt="Stars" src="https://img.shields.io/github/stars/1MaxSon/">
+<img alt="Stars" src="https://img.shields.io/github/stars/1MaxSon/translation_preview">
 </p>
 
 
