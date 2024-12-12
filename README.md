@@ -3,7 +3,7 @@
 	<img alt="Logo" src="icon.svg">
 </h1>
 <p align="center">
-A plugin for Godot to preview translations directly inside the editor.
+A plugin for Godot to preview translations directly inside the editor.<br>
 <a href="https://godotengine.org/download/archive/">
 	<img alt="Static Badge" src="https://img.shields.io/badge/Godot-4.2%2B-blue">
 </a>
