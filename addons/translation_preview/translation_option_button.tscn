@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=3 uid="uid://blg54x277sf8t"]
+
+[ext_resource type="Script" path="res://addons/translation_preview/translation_option_button.gd" id="1_kguxh"]
+
+[node name="TranslationOptionButton" type="OptionButton"]
+anchors_preset = -1
+anchor_right = 0.0642361
+anchor_bottom = 0.0478395
+offset_right = -42.0
+offset_bottom = -11.0
+mouse_default_cursor_shape = 2
+selected = 0
+allow_reselect = true
+item_count = 3
+popup/item_0/text = "None"
+popup/item_0/separator = true
+popup/item_1/text = "en"
+popup/item_1/id = 2
+popup/item_2/text = "ru"
+popup/item_2/id = 3
+script = ExtResource("1_kguxh")
+metadata/_edit_use_anchors_ = true
+
+[connection signal="item_selected" from="." to="." method="_on_item_selected"]

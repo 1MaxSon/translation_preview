@@ -1,0 +1,184 @@
+[gd_scene format=3 uid="uid://dherj35cq4la5"]
+
+[node name="Demo" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Margin" type="MarginContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="VBox" type="VBoxContainer" parent="Panel/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="Header" type="Label" parent="Panel/Margin/VBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "TID_HEADER_TEXT"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBox" type="HBoxContainer" parent="Panel/Margin/VBox"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="TabContainer" type="TabContainer" parent="Panel/Margin/VBox/HBox"]
+custom_minimum_size = Vector2(475, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+current_tab = 0
+
+[node name="TID_TABBAR_ITEM1_TEXT" type="Panel" parent="Panel/Margin/VBox/HBox/TabContainer"]
+layout_mode = 2
+metadata/_tab_index = 0
+
+[node name="HelloLabel" type="Label" parent="Panel/Margin/VBox/HBox/TabContainer/TID_TABBAR_ITEM1_TEXT"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.424188
+anchor_top = 0.420139
+anchor_right = 0.575812
+anchor_bottom = 0.579861
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+text = "TID_HELLO_TEXT"
+metadata/_edit_use_anchors_ = true
+
+[node name="TID_TABBAR_ITEM2_TEXT" type="Panel" parent="Panel/Margin/VBox/HBox/TabContainer"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 1
+
+[node name="Button" type="Button" parent="Panel/Margin/VBox/HBox/TabContainer/TID_TABBAR_ITEM2_TEXT"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.363718
+anchor_top = 0.392361
+anchor_right = 0.636282
+anchor_bottom = 0.607639
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+text = "TID_BUTTON_TEXT"
+metadata/_edit_use_anchors_ = true
+
+[node name="Scroll" type="ScrollContainer" parent="Panel/Margin/VBox/HBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+horizontal_scroll_mode = 0
+
+[node name="Controls" type="FlowContainer" parent="Panel/Margin/VBox/HBox/Scroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/h_separation = 35
+theme_override_constants/v_separation = 35
+
+[node name="MenuButton" type="MenuButton" parent="Panel/Margin/VBox/HBox/Scroll/Controls"]
+layout_mode = 2
+size_flags_horizontal = 0
+text = "TID_MENUBUTTON_TEXT"
+item_count = 2
+popup/item_0/text = "TID_MENU_BUTTON_ITEM1_TEXT"
+popup/item_1/text = "TID_MENU_BUTTON_ITEM2_TEXT"
+popup/item_1/id = 1
+
+[node name="LinkButton" type="LinkButton" parent="Panel/Margin/VBox/HBox/Scroll/Controls"]
+layout_mode = 2
+size_flags_horizontal = 0
+text = "TID_LINK_BUTTON_TEXT"
+
+[node name="LineEdit" type="LineEdit" parent="Panel/Margin/VBox/HBox/Scroll/Controls"]
+layout_mode = 2
+size_flags_horizontal = 0
+placeholder_text = "TID_PLACEHOLDER_TEXT"
+expand_to_text_length = true
+
+[node name="MenuBar" type="MenuBar" parent="Panel/Margin/VBox/HBox/Scroll/Controls"]
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="TID_MENUBAR_TITLE" type="PopupMenu" parent="Panel/Margin/VBox/HBox/Scroll/Controls/MenuBar"]
+title = "TID_POPMENU_TITLE"
+initial_position = 1
+size = Vector2i(393, 100)
+extend_to_title = true
+item_count = 2
+item_0/text = "TID_POPUP_MENU_ITEM1_TEXT"
+item_1/text = "TID_POPUP_MENU_ITEM2_TEXT"
+item_1/id = 1
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Panel/Margin/VBox/HBox/Scroll/Controls"]
+layout_mode = 2
+size_flags_horizontal = 0
+bbcode_enabled = true
+text = "[color=green]TID_RICH_TEXT_LABEL_TEXT[/color]"
+fit_content = true
+autowrap_mode = 0
+
+[node name="TabBar" type="TabBar" parent="Panel/Margin/VBox/HBox/Scroll/Controls"]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+current_tab = 0
+max_tab_width = 350
+tab_count = 2
+tab_0/title = "TID_TABBAR_ITEM1_TEXT"
+tab_1/title = "TID_TABBAR_ITEM2_TEXT"
+
+[node name="GraphEdit" type="GraphEdit" parent="Panel/Margin/VBox"]
+custom_minimum_size = Vector2(0, 350)
+layout_mode = 2
+
+[node name="GraphFrame" type="GraphFrame" parent="Panel/Margin/VBox/GraphEdit"]
+layout_mode = 0
+offset_left = 686.0
+offset_top = 88.0
+offset_right = 947.0
+offset_bottom = 192.0
+mouse_filter = 1
+position_offset = Vector2(686, 88)
+title = "TID_GRAPHFRAME_TEXT"
+
+[node name="GraphNode" type="GraphNode" parent="Panel/Margin/VBox/GraphEdit"]
+layout_mode = 0
+offset_left = 360.0
+offset_top = 158.0
+offset_right = 554.0
+offset_bottom = 257.0
+mouse_filter = 1
+position_offset = Vector2(360, 158)
+title = "TID_GRAPHNODE_TEXT"
+
+[node name="GraphNode2" type="GraphNode" parent="Panel/Margin/VBox/GraphEdit"]
+layout_mode = 0
+offset_left = 103.0
+offset_top = 135.0
+offset_right = 330.0
+offset_bottom = 229.0
+mouse_filter = 1
+position_offset = Vector2(103, 135)
+title = "TID_GRAPHNODE2_TEXT"

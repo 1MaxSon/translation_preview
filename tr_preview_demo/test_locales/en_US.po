@@ -1,0 +1,75 @@
+# Run msginit --no-translator --input=messages.pot --locale=<lang>
+# Don't remove the two lines below, they're required for gettext to work correctly.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CP1252\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "TID_HEADER_TEXT"
+msgstr "You can see how the text affects the interface!"
+
+msgid "TID_HELLO_TEXT"
+msgstr "Hello!"
+
+msgid "TID_BUTTON_TEXT"
+msgstr "Button text"
+
+msgid "TID_CHECKBUTTON_TEXT"
+msgstr "CheckButton text"
+
+msgid "TID_MENUBUTTON_TEXT"
+msgstr "MenuButton text"
+
+msgid "TID_OPTION_BUTTON_ITEM1_TEXT"
+msgstr "The text of the first item of the OptionButton"
+
+msgid "TID_OPTION_BUTTON_ITEM2_TEXT"
+msgstr "The text of the second item of the OptionButton"
+
+msgid "TID_LINK_BUTTON_TEXT"
+msgstr "LinkButton text"`
+
+msgid "TID_PLACEHOLDER_TEXT"
+msgstr "Placeholder text for LineEdit"
+
+msgid "TID_MENUBAR_TITLE"
+msgstr "MenuBar text"
+
+msgid "[color=green]TID_RICH_TEXT_LABEL_TEXT[/color]"
+msgstr "[color=green]RichTextLabel text[/color]"
+
+msgid "TID_TABBAR_ITEM1_TEXT"
+msgstr "The text of the first tab of the TabBar"
+
+msgid "TID_TABBAR_ITEM2_TEXT"
+msgstr "The text of the second tab of the TabBar"
+
+msgid "TID_GRAPHFRAME_TEXT"
+msgstr "GraphFrame text"
+
+msgid "TID_GRAPHNODE_TEXT"
+msgstr "GraphNode text"
+
+msgid "TID_GRAPHNODE2_TEXT"
+msgstr "GraphNode2 text"
+
+msgid "TID_POPUP_MENU_ITEM1_TEXT"
+msgstr "The text of the first item of the PopupMenu"
+
+msgid "TID_POPUP_MENU_ITEM2_TEXT"
+msgstr "The text of the second item of the PopupMenu"
+
+msgid "TID_TABCONTAINER_ITEM1"
+msgstr "The text of the first item of the TabContainer"
+
+msgid "TID_TABCONTAINER_ITEM2"
+msgstr "The text of the second item of the TabContainer"
+
+msgid "TID_CUSTOM_LABEL_NODE"
+msgstr "The text of the custom class CustomLabel"
