@@ -5,7 +5,7 @@
 <p align="center">
 A plugin for Godot to preview translations directly inside the editor.<br>
 <a href="https://godotengine.org/download/archive/">
-	<img alt="Static Badge" src="https://img.shields.io/badge/Godot-4.2%2B-blue">
+	<img alt="Static Badge" src="https://img.shields.io/badge/Godot-4.0%2B-blue">
 </a>
 <a href="LICENSE">
 <img alt="GitHub License" src="https://img.shields.io/github/license/1MaxSon/translation_preview">
@@ -29,8 +29,8 @@ A plugin for Godot to preview translations directly inside the editor.<br>
 5. Once the installation is complete, go to "Project" -> "Project Settings" -> "Plugins".
 6. Find the TranslationPreview plugin in the list and enable it by checking the box next to it.
 ### Installation from GitHub
-1. Visit the TranslationPreview plugin GitHub repository.
-2. Navigate to the Releases page.
+1. Visit the [TranslationPreview plugin GitHub repository](https://github.com/1MaxSon/translation_preview).
+2. Navigate to the [Releases](https://github.com/1MaxSon/translation_preview/releases/latest) page.
 3. Download the latest stable release version.
 4. Extract the downloaded files into your Godot project's `addons` folder.
 
