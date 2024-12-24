@@ -13,13 +13,10 @@ A plugin for Godot to preview translations directly inside the editor.<br>
 <img alt="Stars" src="https://img.shields.io/github/stars/1MaxSon/translation_preview">
 </p>
 
-
 ## Features
 - **Text translation inside the editor:** Allows you to view translated lines directly in the Godot editor, without having to start the game.
 - **Support for custom nodes:** Support for custom nodes is easily added using the `tr_editor` function, which makes it possible to translate text in custom components.
 - **Flexibility in configuration:** The ability to add additional translation handlers for different node types via the configuration file
-- **Ready-made demo:** The plugin includes a usage example located in the `tr_preview_demo` folder
-
   <p align="center"><img src="demo.gif"></p>
 
 ## Installation Guide
@@ -100,7 +97,7 @@ If you need to add translation support for nodes from addons, follow these steps
 2. **Configure the Handler Path in Project Settings**  
    In your project settings, navigate to `translation_preview/translation_handlers_path` and set the path to the file you created, for example:  
    ```
-   res://translation_handlers.gd
+   res://addons/your_plugin/translation_handlers.gd
    ```
 
 ### Code Explanation
