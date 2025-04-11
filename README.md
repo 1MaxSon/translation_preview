@@ -40,6 +40,15 @@ A plugin for Godot to preview translations directly inside the editor.<br>
 After enabling the plugin, an option button will appear in the toolbar (top-right corner). If translations are uploaded to the project, you can click the button and select a language to preview.
 > [!NOTE]
 > After making changes to your translation file, you must **restart** the project in the Godot Editor for the changes to take effect
+
+> [!WARNING]
+> In rare cases, when changing the preview language and then closing the project (especially with saving), the original translation keys might not be restored correctly. This issue is due to engine-level limitations and cannot be fully resolved within the plugin itself.
+
+To minimize the risk of data loss, it is **strongly recommended to use version control** (such as Git) before testing any language preview features.
+Here's how you can protect your work:
+  1. Commit all current changes in your project.
+  2. Ensure that translation files (e.g., `.po`, `.csv`) and scene/script files (`.tscn`, `.gd`) are tracked in Git.
+  3. If anything breaks unexpectedly, you’ll be able to revert to a safe state easily.
 ---
 ## Adding Previews for Custom Nodes
 To add a translation preview to your node, you need to implement a method called `tr_editor`. This method handles the logic for switching between translation and original text modes. Below is a guide and example implementation.

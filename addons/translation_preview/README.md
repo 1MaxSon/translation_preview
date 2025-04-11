@@ -5,7 +5,7 @@
 <p align="center">
 A plugin for Godot to preview translations directly inside the editor.<br>
 <a href="https://godotengine.org/download/archive/">
-	<img alt="Static Badge" src="https://img.shields.io/badge/Godot-4.0%2B-blue">
+	<img alt="Static Badge" src="https://img.shields.io/badge/Godot-4.2%2B-blue">
 </a>
 <a href="LICENSE">
 <img alt="GitHub License" src="https://img.shields.io/github/license/1MaxSon/translation_preview">
@@ -13,11 +13,12 @@ A plugin for Godot to preview translations directly inside the editor.<br>
 <img alt="Stars" src="https://img.shields.io/github/stars/1MaxSon/translation_preview">
 </p>
 
+
 ## Features
 - **Text translation inside the editor:** Allows you to view translated lines directly in the Godot editor, without having to start the game.
 - **Support for custom nodes:** Support for custom nodes is easily added using the `tr_editor` function, which makes it possible to translate text in custom components.
 - **Flexibility in configuration:** The ability to add additional translation handlers for different node types via the configuration file
-  <p align="center"><img src="demo.gif"></p>
+- **Ready-made demo:** The plugin includes a usage example located in the `tr_preview_demo` folder
 
 ## Installation Guide
 ### Asset Library Installation
@@ -37,6 +38,15 @@ A plugin for Godot to preview translations directly inside the editor.<br>
 After enabling the plugin, an option button will appear in the toolbar (top-right corner). If translations are uploaded to the project, you can click the button and select a language to preview.
 > [!NOTE]
 > After making changes to your translation file, you must **restart** the project in the Godot Editor for the changes to take effect
+
+> [!WARNING]
+> In rare cases, when changing the preview language and then closing the project (especially with saving), the original translation keys might not be restored correctly. This issue is due to engine-level limitations and cannot be fully resolved within the plugin itself.
+
+To minimize the risk of data loss, it is **strongly recommended to use version control** (such as Git) before testing any language preview features.
+Here's how you can protect your work:
+  1. Commit all current changes in your project.
+  2. Ensure that translation files (e.g., `.po`, `.csv`) and scene/script files (`.tscn`, `.gd`) are tracked in Git.
+  3. If anything breaks unexpectedly, you’ll be able to revert to a safe state easily.
 ---
 ## Adding Previews for Custom Nodes
 To add a translation preview to your node, you need to implement a method called `tr_editor`. This method handles the logic for switching between translation and original text modes. Below is a guide and example implementation.
@@ -97,7 +107,7 @@ If you need to add translation support for nodes from addons, follow these steps
 2. **Configure the Handler Path in Project Settings**  
    In your project settings, navigate to `translation_preview/translation_handlers_path` and set the path to the file you created, for example:  
    ```
-   res://addons/your_plugin/translation_handlers.gd
+   res://translation_handlers.gd
    ```
 
 ### Code Explanation
