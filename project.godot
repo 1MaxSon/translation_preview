@@ -12,7 +12,7 @@ config_version=5
 
 config/name="TranslationPreviewAddon"
 config/tags=PackedStringArray("addon")
-config/features=PackedStringArray("4.3", "GL Compatibility")
+config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [display]
@@ -26,7 +26,7 @@ enabled=PackedStringArray("res://addons/translation_preview/plugin.cfg")
 
 [internationalization]
 
-locale/translations=PackedStringArray("res://tr_preview_demo/test_locales/en_US.po", "res://tr_preview_demo/test_locales/ru_RU.po")
+locale/translations=PackedStringArray("res://addons/translation_preview/tr_preview_demo/test_locales/en_US.po", "res://addons/translation_preview/tr_preview_demo/test_locales/ru_RU.po")
 
 [rendering]
 

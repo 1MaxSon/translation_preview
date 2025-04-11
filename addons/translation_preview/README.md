@@ -54,16 +54,16 @@ Here is an example implementation of `tr_editor`, designed to translate a Label'
 
 ```gd
 func tr_editor(translation_mode: bool, nodes_data: Dictionary) -> Dictionary:
-    if translation_mode:
-        if not nodes_data.has(self):
-            nodes_data[self] = text  # Save the original text
+	if translation_mode:
+		if not nodes_data.has(self):
+			nodes_data[self] = text  # Save the original text
 		# A custom TranslationService is used, since the built-in TranslationServer does not translate inside the editor
-        text = TranslationService.translate(nodes_data[self])  # Translate the text
-    else:
-        if nodes_data.has(self):
-            text = nodes_data[self]  # Restore the original text
-            nodes_data.erase(self)  # Remove the entry from the dictionary
-    return nodes_data
+		text = TranslationService.translate(nodes_data[self])  # Translate the text
+	else:
+		if nodes_data.has(self):
+			text = nodes_data[self]  # Restore the original text
+			nodes_data.erase(self)  # Remove the entry from the dictionary
+	return nodes_data
 ```
 ## Adding Translation Previews for Nodes from Addons
 If you need to add translation support for nodes from addons, follow these steps:
@@ -77,21 +77,21 @@ If you need to add translation support for nodes from addons, follow these steps
 
    # A dictionary mapping node class names to their respective handlers
    var handlers := {
-       "AddonNodeClassName": tr_addon_node,  # Replace with the actual class name of your addon node
+	   "AddonNodeClassName": tr_addon_node,  # Replace with the actual class name of your addon node
    }
 
    # Translation handler function for addon nodes
    func tr_addon_node(node: AddonNode, translation_mode: bool, nodes_data: Dictionary) -> Dictionary:
-       if translation_mode:
-           if not nodes_data.has(node):
-               nodes_data[node] = node.data  # Save the original node data
-           # Use TranslationService because the built-in TranslationServer does not work inside the editor
-           node.data = TranslationService.translate(nodes_data[node])  # Translate the node data
-       else:
-           if nodes_data.has(node):
-               node.data = nodes_data[node]  # Restore the original node data
-               nodes_data.erase(node)  # Remove the entry from the dictionary
-       return nodes_data
+	   if translation_mode:
+		   if not nodes_data.has(node):
+			   nodes_data[node] = node.data  # Save the original node data
+		   # Use TranslationService because the built-in TranslationServer does not work inside the editor
+		   node.data = TranslationService.translate(nodes_data[node])  # Translate the node data
+	   else:
+		   if nodes_data.has(node):
+			   node.data = nodes_data[node]  # Restore the original node data
+			   nodes_data.erase(node)  # Remove the entry from the dictionary
+	   return nodes_data
    ```
 
 2. **Configure the Handler Path in Project Settings**  

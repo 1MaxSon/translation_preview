@@ -5,7 +5,7 @@
 <p align="center">
 A plugin for Godot to preview translations directly inside the editor.<br>
 <a href="https://godotengine.org/download/archive/">
-	<img alt="Static Badge" src="https://img.shields.io/badge/Godot-4.0%2B-blue">
+	<img alt="Static Badge" src="https://img.shields.io/badge/Godot-4.2%2B-blue">
 </a>
 <a href="LICENSE">
 <img alt="GitHub License" src="https://img.shields.io/github/license/1MaxSon/translation_preview">

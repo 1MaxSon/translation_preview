@@ -24,7 +24,7 @@ static func translate(message: String) -> String:
 ## Each value is an Array of [Translation].
 static func get_translations() -> Dictionary:
 	var translations_resources: PackedStringArray = ProjectSettings.get_setting("internationalization/locale/translations")
-	var translations = {}
+	var translations := {}
 
 	for resource in translations_resources:
 		var t: Translation = load(resource)
